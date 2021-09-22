@@ -1,0 +1,64 @@
+/* Navbar */
+.navbar {
+  z-index: 10;
+}
+
+.navbar .row {
+  margin: 15px 20px 0px 20px;
+}
+
+/* Conteúdo */
+section {
+  padding: 0px 50px 30px 50px;
+}
+
+p.texto {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 2vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  text-align: justify;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  color: rgb(0 200 0);
+  font-size: 30px;
+}
+
+h3:hover {
+  color: rgb(0 200 0);
+  transform: rotate(-360deg);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Cores dos nossos Valores */
+.span1 {
+  color: red;
+}
+
+.span2 {
+  color: aqua;
+}
+
+.span3 {
+  color: violet;
+}
+
+.span4 {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

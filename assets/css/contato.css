@@ -1,0 +1,32 @@
+/* Conteúdo */
+main .row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main .col {
+  width: 50%;
+}
+
+section {
+  font-family: "Open Sans", sans-serif;
+  padding: 0px 50px 30px 50px;
+  display: flex;
+}
+
+/* Frame do Google Maps */
+#mapa {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 30px;
+  justify-content: center;
+}
+
+/* Ícones */
+.img {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  width: 25px;
+  margin: 20px;
+}

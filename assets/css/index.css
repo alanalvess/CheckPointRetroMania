@@ -1,0 +1,53 @@
+/* Navbar */
+.navbar .row {
+  font-family: "Fredoka One", cursive;
+}
+
+/* navbar */
+.navbar {
+  right: -90%;
+  width: 90%;
+  opacity: 0.9;
+}
+
+/* Header */
+.logo {
+  /* background: transparent; */
+  opacity: 0.7;
+}
+
+/* banner parallax */
+.parallax {
+  background-image: url("../img/logo/retromania_logo_banner.png");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+/* Resposividade */
+@media (max-width: 400px) {
+  .parallax {
+    background-image: url("../img/logo/retromania_logo_banner1.png");
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .parallax {
+    background-image: url("../img/logo/retromania_logo_banner2.png");
+    min-height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+  }
+}

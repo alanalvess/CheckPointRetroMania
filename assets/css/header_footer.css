@@ -1,0 +1,187 @@
+/* Geral */
+html {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Fredoka One", cursive;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  align-items: center;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  right: -77%;
+  width: 77%;
+  height: 50px;
+  background-color: rgb(0 200 0);
+  margin-top: 5px;
+  padding: 20px;
+  border-radius: 20px 0px 0px 20px;
+  z-index: 3;
+}
+
+.navbar .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15px 20px 0px 20px;
+}
+
+.navbar .col {
+  margin-bottom: 25px;
+}
+
+/* Navbar Animation */
+.navbar:hover {
+  animation: navbar_animation 1s ease-in-out forwards;
+}
+
+@keyframes navbar_animation {
+  /* 0% {
+      right: -73%;
+    } */
+  100% {
+    right: 0%;
+  }
+}
+
+/* Navbar Buttons */
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: 30px;
+}
+
+.navbar a:before {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  content: "";
+  background: white;
+  opacity: 0.3;
+  transition: all 0.3s;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.navbar a:hover {
+  color: black;
+  transform: scale(1.2);
+}
+
+.navbar a:hover:before {
+  width: 100%;
+}
+
+/* Header */
+.logo {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.logo .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 75px;
+  padding: 10px;
+  z-index: 20;
+  display: inline;
+}
+
+#subtitle {
+  padding-left: 10px;
+  font-size: 20px;
+  color: rgb(0 200 0);
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+/* main */
+main {
+  background: #1d1d1d;
+}
+
+/* Título das Páginas */
+h1 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgb(255, 70, 0);
+  margin-top: 20vh;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  border-top: 3px solid rgb(255, 70, 0);
+}
+
+/* Ícones */
+footer img {
+  height: 30px;
+  margin: 0 35px;
+  padding: 15px 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Copyright */
+.copyright {
+  color: #555;
+  text-align: center;
+}
+
+/* Resposnsividade */
+@media (max-width: 950px) {
+  .navbar {
+    height: 80px;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 300px;
+  }
+
+  h1 {
+    margin-top: 200px;
+  }
+}

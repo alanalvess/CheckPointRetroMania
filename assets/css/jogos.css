@@ -1,0 +1,32 @@
+/* Grid Layout */
+.card {
+  min-width: 75vw;
+}
+
+.wrapper {
+  border-radius: 5px;
+  min-height: 75vh;
+}
+
+/* Card Layout */
+.wrapper:hover .data {
+  transform: translateY(0);
+}
+
+.data {
+  transform: translateY(calc(100px + 3.5em));
+}
+
+.card h1 {
+  display: inline-block;
+}
+
+.content {
+  padding-bottom: 3em;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  margin: 25px 15px;
+}

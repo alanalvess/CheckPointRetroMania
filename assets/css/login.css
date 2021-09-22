@@ -1,0 +1,213 @@
+/* Geral */
+main {
+  padding-bottom: 5px;
+}
+
+/* Form de Login/Cadastro */
+fieldset {
+  border: none;
+}
+
+.container-main {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 5% auto;
+  background: rgba(216, 216, 216, 0.6);
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+/* Button de Login/Cadastro */
+.btn-box {
+  width: 250px;
+  height: 40px;
+  margin: 30px auto;
+  position: relative;
+  border-left: 2px solid #e14641;
+  border-right: 2px solid #e14641;
+  border-radius: 10px;
+}
+
+#btn-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(0, 200, 0, 0.6);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.alt {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Login */
+#login {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+  margin-top: -60px;
+  left: 50px;
+}
+
+/* Cadastro */
+#register {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+  margin-top: -60px;
+  left: 400px;
+}
+
+/* Input e Label */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 11px 0;
+  border: none;
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+  color: rgb(66, 66, 66);
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+  padding-left: 30px;
+  display: block;
+}
+
+/* Hover e Focus Input */
+.hvr:hover {
+  background-color: rgba(25, 225, 0, 0.4);
+  transition: 0.3s;
+}
+
+.hvr:focus {
+  background-color: rgba(25, 225, 0, 0.4);
+  transition: 0.3s;
+}
+
+/* Placeholder do Forms */
+::placeholder {
+  color: rgb(66, 66, 66);
+  padding: 10px;
+}
+
+/* Checkbox de lembrar senha e aceite dos termos */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  width: 60px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  left: 0;
+  top: -5px;
+  transition: all 0.3s ease;
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  top: 6px;
+  left: 10px;
+  transition: all 0.2s ease;
+}
+
+/* on checked */
+[type="checkbox"]:checked + label:before {
+  background: rgb(0, 200, 0);
+}
+
+[type="checkbox"]:checked + label:after {
+  background: #ffffff;
+  top: 6px;
+  left: 40px;
+}
+
+[type="checkbox"]:checked + label .ui,
+[type="checkbox"]:not(:checked) + label .ui:before,
+[type="checkbox"]:checked + label .ui:after {
+  position: absolute;
+  left: 6px;
+  width: 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  transition: all 0.2s ease;
+}
+
+[type="checkbox"]:not(:checked) + label .ui:before {
+  content: "NÃO";
+  left: 25px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[type="checkbox"]:checked + label .ui:after {
+  content: "SIM";
+  color: #ffffff;
+}
+
+[type="checkbox"]:focus + label:before {
+  box-sizing: border-box;
+  margin-top: -1px;
+}
+
+/* Buttons */
+.btn-submit {
+  width: 90%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: 10px;
+  background-color: rgb(66, 66, 66);
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.btn-submit:hover {
+  background-color: #e14641;
+}

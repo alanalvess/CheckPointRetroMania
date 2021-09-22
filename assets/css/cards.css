@@ -1,0 +1,124 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+/* Grid Layout */
+main .row {
+  max-width: 100%;
+  margin: 5% auto 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  float: center;
+  padding: 2rem 1.7rem;
+  max-width: 30%;
+  min-width: 300px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card Layout */
+.wrapper:hover .data {
+  transform: translateY(0);
+}
+
+.data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(130px + 1em));
+  transition: transform 0.3s;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.content {
+  padding: 0 1em;
+  position: relative;
+  z-index: 1;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Card Title */
+.card h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* Card Button */
+.button {
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  margin: 2em auto 1em;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1;
+  position: relative;
+  font-weight: 700;
+  background-color: rgba(0, 200, 0);
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+/* Comentário */
+.text {
+  height: 40px;
+  margin: 0;
+}
+
+/* Background Image */
+.image1 {
+  background: url(../img/Jogos/pong.png)
+    center/cover no-repeat;
+  background-blend-mode: normal;
+}
+
+.image2 {
+  background: url(../img/Jogos/pacman.png)
+    center/cover no-repeat;
+  background-blend-mode: normal;
+}
+
+.image3 {
+  background: url(../img/Jogos/donkey.png)
+    center/cover no-repeat;
+  background-blend-mode: normal;
+}
+
+.image4 {
+  background: url(../img/Jogos/tetris.png)
+    center/cover no-repeat;
+  background-blend-mode: normal;
+}
+
+.image5 {
+  background: url(../img/Jogos/mario.png)
+    center/cover no-repeat;
+  background-blend-mode: normal;
+}
+
+.image6 {
+  background: url(../img/Jogos/river.png)
+    center/cover no-repeat;
+  background-blend-mode: normal;
+}

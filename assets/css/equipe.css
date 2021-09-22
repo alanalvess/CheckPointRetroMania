@@ -1,0 +1,20 @@
+/* Grid Layout */
+.wrapper {
+  background: rgba(216, 216, 216, 0.6);
+  min-height: 340px;
+}
+
+/* Card Layout */
+.data {
+  transform: translateY(calc(270px + 1em));
+}
+
+img {
+  max-width: 340px;
+  max-height: 340px;
+}
+
+/* Comentário */
+.text {
+  height: 175px;
+}
